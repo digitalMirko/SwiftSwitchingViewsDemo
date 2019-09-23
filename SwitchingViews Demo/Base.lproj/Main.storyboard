@@ -43,7 +43,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3N-go-ubE">
                                 <rect key="frame" x="20" y="421" width="374" height="118"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="118" id="UDX-zT-hzo"/>
                                 </constraints>
@@ -51,9 +51,12 @@
                                 <state key="normal" title="Click for View 2">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="UmV-7B-u82" kind="presentation" modalPresentationStyle="fullScreen" id="5bT-aC-yAd"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vK4-ny-35z" secondAttribute="trailing" constant="20" id="6eN-xf-hWq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="V3N-go-ubE" secondAttribute="trailing" constant="20" id="FWk-Z3-V2w"/>
@@ -76,10 +79,10 @@
             </objects>
             <point key="canvasLocation" x="389.85507246376812" y="139.95535714285714"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="KSh-IM-kjJ">
             <objects>
-                <viewController id="JYM-Wx-t2v" sceneMemberID="viewController">
+                <viewController id="JYM-Wx-t2v" customClass="SecondViewController" customModule="SwitchingViews_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NVU-7C-9ZJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -112,7 +115,61 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pz2-Ub-IXs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1324.6376811594205" y="31.473214285714285"/>
+            <point key="canvasLocation" x="1316" y="-207"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="57s-YR-Bn2">
+            <objects>
+                <viewController id="UmV-7B-u82" customClass="ThirdViewController" customModule="SwitchingViews_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0mG-Jb-Ey3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to View 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="J6j-7p-EmB">
+                                <rect key="frame" x="20" y="109" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seque using Present Modally" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EPW-me-Zkh">
+                                <rect key="frame" x="20" y="176" width="374" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wet-Uo-TJs">
+                                <rect key="frame" x="20" y="277" width="374" height="118"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="118" id="VX1-je-8Jm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="37"/>
+                                <state key="normal" title="Click for Main View">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="mainViewBtn:" destination="UmV-7B-u82" eventType="touchUpInside" id="ZOm-TB-QeN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="J6j-7p-EmB" firstAttribute="top" secondItem="Uza-9M-EvC" secondAttribute="top" constant="65" id="2DC-Qt-cKw"/>
+                            <constraint firstItem="Uza-9M-EvC" firstAttribute="trailing" secondItem="J6j-7p-EmB" secondAttribute="trailing" constant="20" id="9ZV-Jp-ij1"/>
+                            <constraint firstItem="J6j-7p-EmB" firstAttribute="leading" secondItem="Uza-9M-EvC" secondAttribute="leading" constant="20" id="Cca-Ih-Pbt"/>
+                            <constraint firstItem="Uza-9M-EvC" firstAttribute="trailing" secondItem="Wet-Uo-TJs" secondAttribute="trailing" constant="20" id="LEE-O4-MLJ"/>
+                            <constraint firstItem="EPW-me-Zkh" firstAttribute="top" secondItem="J6j-7p-EmB" secondAttribute="bottom" constant="33" id="VlD-AF-dmM"/>
+                            <constraint firstItem="Wet-Uo-TJs" firstAttribute="leading" secondItem="Uza-9M-EvC" secondAttribute="leading" constant="20" id="Y81-xi-y53"/>
+                            <constraint firstItem="Wet-Uo-TJs" firstAttribute="top" secondItem="EPW-me-Zkh" secondAttribute="bottom" constant="73" id="aBp-cL-aYI"/>
+                            <constraint firstItem="Uza-9M-EvC" firstAttribute="trailing" secondItem="EPW-me-Zkh" secondAttribute="trailing" constant="20" id="bC0-d0-xOW"/>
+                            <constraint firstItem="EPW-me-Zkh" firstAttribute="leading" secondItem="Uza-9M-EvC" secondAttribute="leading" constant="20" id="o70-3m-gZ1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Uza-9M-EvC"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5dl-PO-Ser" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1314.4927536231885" y="474.77678571428567"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Cod-mU-RhO">
