@@ -3,7 +3,7 @@ Swift - Swift SwitchingViews Demo - Demo 18 of 30
 
 In this demo app we demonstrate how to code swift Switching Views.
 
-There are so many interesting things within swift. This demo shows one way to use Switching View options in an app.
+There are so many interesting things within swift. This demo shows two ways to use Switching View options in an app.
 
 As the user gets into the app they are greeted with a title label on top 'Swift UIAlertViews Demo' and view label right below
 'Main View'. Then right below there are two large color filled buttons which give instructions for what to click and view. The top 
