@@ -1,6 +1,8 @@
 # SwiftSwitchingViewsDemo
 Swift - Swift SwitchingViews Demo - Demo 18 of 30
 
+App created in Xcode 11.0 using Swift 5.0, iOS Deployment Target 13.0 and tested on a iPhone Pro Max Emulator
+
 In this demo app we demonstrate how to code swift Switching Views.
 
 There are so many interesting things within swift. This demo shows two ways to use Switching View options in an app.
@@ -25,7 +27,7 @@ for the IBAction for the button we just dismiss the transition in code which tak
 Coming soon:<br>
 Details and the screen cap images of the app in use can be found on <a href="http://digitalmirko.com/iOSApps.html">Digital Mirko</a>.
 
-Screen Cap on a iPhone Xr device:(shown below)</br>
+Screen Cap on a iPhone 11 Pro Max device:(shown below)</br>
 (Left image) (Top Row) App started.<br>
 (Middle Image) (Top Row) Button Clicked 'Click for View 1' user taken to view 1.<br>
 (Right image) (Top Row) Top 'Back' button clicked user taken back to main view.<br>
